@@ -865,6 +865,7 @@ GameObject:
   - component: {fileID: 1443080973}
   - component: {fileID: 1443080977}
   - component: {fileID: 1443080978}
+  - component: {fileID: 1443080979}
   m_Layer: 0
   m_Name: Danny
   m_TagString: Untagged
@@ -885,8 +886,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 15
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -942,6 +943,19 @@ CircleCollider2D:
   m_Offset: {x: 0.46, y: 0.98}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!114 &1443080979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443080972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe14a87e85e5044c936375b3763492f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fltTorqueAmount: 10
 --- !u!1 &1746447870
 GameObject:
   m_ObjectHideFlags: 3
