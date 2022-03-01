@@ -11,8 +11,9 @@ public class CrashDetector : MonoBehaviour
     [SerializeField] AudioClip crashSFX;
    void OnTriggerEnter2D(Collider2D other) 
    {
-       if(other.gameObject.tag == "Ground")
+       if(other.tag == "Ground")
        {
+            FindObjectOfType<PlayerController>().DisableControls();
             crashEffect.Play();
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
             Invoke("ReloadScene", fltLoadDelay);
