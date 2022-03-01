@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // move character left and right while in the air.
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             rb2d.AddTorque(fltTorqueAmount);
